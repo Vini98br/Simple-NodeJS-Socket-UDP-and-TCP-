@@ -1,0 +1,20 @@
+{
+  "name": "trabredes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev:tcp": "npx nodemon --exec babel-node src/clientTCP.js",
+    "dev:tcp:server": "npx nodemon --exec babel-node src/serverTCP.js",
+    "dev:udp": "npx nodemon --exec babel-node src/clientUDP.js",
+    "start:tcp": "babel-node src/clientTCP.js",
+    "start:udp": "babel-node src/clientUDP.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "nodemon": "^2.0.5"
+  }
+}
